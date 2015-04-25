@@ -1,9 +1,9 @@
 ---
 layout: post
-title: There's a Rails convention on naming event streams
+title: There's a Rails' convention on naming event streams
 ---
 
-In a recent code review, my colleague pointed out to me that Rails has a convention on naming event streams (`s/streams/(topics|queue_names)/`). This convention was written at the end of the `ActiveSupport` instrumentation [doco](http://edgeguides.rubyonrails.org/active_support_instrumentation.html#creating-custom-events) quite modestly:
+In a recent code review, my colleague pointed out that Rails has a convention on naming event streams (`s/streams/(topics|queue_names)/`). It was written at the end of the `ActiveSupport` instrumentation [doco](http://edgeguides.rubyonrails.org/active_support_instrumentation.html#creating-custom-events) quite modestly:
 
 > You should follow Rails conventions when defining your own events. The format is: `event.library`. If you application is sending Tweets, you should create an event named `tweet.twitter`.
 
