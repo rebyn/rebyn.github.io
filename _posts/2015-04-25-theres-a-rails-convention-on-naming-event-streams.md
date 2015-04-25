@@ -41,3 +41,16 @@ add_shh_key_to_instance.provisioning
 ```
 
 Mucha better!
+
+===
+
+**Update**:
+
+After a long shower (the only place and time where/when I actually think), I figured out:
+
+3. the Rails convention has nothing to do with naming the event following this format: `action_on_things`
+4. `event.library` is still a mystery to me. Given Rails structures resource operations after `Resource#action`, I'm dying to know why they're doing events this way
+
+### `action_on_things`
+
+This works well in the Rails context, where you can select queues using regex with `ActiveSupport::Notification.subscribe` and do (allthenastythings) with those messages in one `subscribe` block. For external queues, I can't imagime myself going through a list of topics to fetch all the relevant messages; not to mention, this's ensured to be horrific with operations that need to be FIFO.
