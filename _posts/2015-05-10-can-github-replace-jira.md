@@ -14,7 +14,7 @@ Let's talk about JIRA, because I'm most annoyed at this tool (urgh, the inline e
 3. Linked Issues (is blocked by, relates to, clones)
 4. Story Points
 
-Let's also not forget how github.com can do the rest of what JIRA does:
+Let's also not forget that github.com can do the rest of what JIRA does:
 
 | JIRA                                    | GITHUB                                  |
 |---------------------------------------  |---------------------------------------  |
@@ -22,9 +22,11 @@ Let's also not forget how github.com can do the rest of what JIRA does:
 | Issues, Assignee, Labels, Description   | Issues, Assignee, Labels, Description   |
 | Fix Version                             | `Fixes/Resolves #12345`                 |
 
-For 1 - 4, I don't think Github will likely add any feature that somehow supports this kind of extra data, nor do I believe they should. So I resort to a simple hack: *how about **an API that persists data** for 1 - 4, and **a browser extension** that does all the talking to this API (which - of course - is triggered whenever you're on a Github) and **displays relevant pieces of info right on your current issue page**?*
+For 1 - 4, I don't think Github will likely add any feature that somehow supports this kind of extra data, nor do I believe they should. So I resort to a simple hack: 
 
-OK, not so simple, giving it my second thought. This flow might bump more sense:
+> how about **an API that persists data** for 1 - 4, and **a browser extension** that does all the talking to this API (which - of course - is triggered whenever you're on Github) and **displays relevant pieces of info right on your current issue page**?
+
+OK, not so simple, after giving it my second thought. This flow might bump more sense:
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/3d0y022E1k1y3y1G423z/Untitled.png)
 
