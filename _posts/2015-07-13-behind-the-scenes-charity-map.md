@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Behind the scenes: Charity Map
+title: "Behind the scenes: Charity Map"
 ---
 
 It's been three years since we jotted down the idea of what-is-now-called Charity Map.
